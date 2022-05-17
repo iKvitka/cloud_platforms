@@ -17,3 +17,6 @@ Created VM instance\
 #### variables for learning
 project `terraform-learning-349712`\
 credentials_file `~/GCP/secrets/terraform_learning_service_account.json`
+
+#### for taking state file in gcp object storage
+`export GOOGLE_APPLICATION_CREDENTIALS='$HOME/GCP/secrets/terraform_learning_service_account.json'`

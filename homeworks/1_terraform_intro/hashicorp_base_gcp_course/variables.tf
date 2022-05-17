@@ -1,6 +1,6 @@
-variable "project" { }
-
-variable "credentials_file" { }
+variable "project" {
+  default = "terraform-learning-349712"
+}
 
 variable "region" {
   default = "us-central1"
