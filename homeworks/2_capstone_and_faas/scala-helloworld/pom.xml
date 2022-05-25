@@ -37,6 +37,9 @@
     <maven.compiler.target>11</maven.compiler.target>
     <maven.compiler.source>11</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <akka.version>2.6.14</akka.version>
+    <akka.http.version>10.1.11</akka.http.version>
+    <scala.binary.version>2.13</scala.binary.version>
   </properties>
 
   <dependencies>
@@ -80,6 +83,28 @@
       <artifactId>guava-testlib</artifactId>
       <version>31.0-jre</version>
       <scope>test</scope>
+    </dependency>
+
+<!--    Alpakka dependencies -->
+    <dependency>
+      <groupId>com.lightbend.akka</groupId>
+      <artifactId>akka-stream-alpakka-google-cloud-storage_${scala.binary.version}</artifactId>
+      <version>3.0.4</version>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-stream_${scala.binary.version}</artifactId>
+      <version>${akka.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-http_${scala.binary.version}</artifactId>
+      <version>${akka.http.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-http-spray-json_${scala.binary.version}</artifactId>
+      <version>${akka.http.version}</version>
     </dependency>
     <!-- [START functions_scala_pom] -->
   </dependencies>
