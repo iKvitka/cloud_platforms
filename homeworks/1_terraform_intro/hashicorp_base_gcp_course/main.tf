@@ -41,7 +41,7 @@ resource "google_compute_firewall" "default" {
 }
 
 resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+  name         = "terraform"
   machine_type = "f1-micro"
 
   boot_disk {
