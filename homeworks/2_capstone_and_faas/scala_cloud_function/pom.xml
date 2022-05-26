@@ -39,6 +39,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <akka.version>2.6.14</akka.version>
     <akka.http.version>10.1.11</akka.http.version>
+    <play.json>2.9.2</play.json>
     <scala.binary.version>2.13</scala.binary.version>
   </properties>
 
@@ -105,6 +106,13 @@
       <groupId>com.typesafe.akka</groupId>
       <artifactId>akka-http-spray-json_${scala.binary.version}</artifactId>
       <version>${akka.http.version}</version>
+    </dependency>
+
+<!--    PlayJson  -->
+    <dependency>
+      <groupId>com.typesafe.play</groupId>
+      <artifactId>play-json_2.13</artifactId>
+      <version>${play.json}</version>
     </dependency>
     <!-- [START functions_scala_pom] -->
   </dependencies>
