@@ -38,3 +38,5 @@ class FaasLearning extends HttpFunction {
     httpResponse.getWriter.write(s"Your request and all your personal data was stolen by us, have a nice day!")
   }
 }
+
+
